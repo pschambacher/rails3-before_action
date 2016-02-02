@@ -7,4 +7,5 @@ AbstractController::Callbacks::ClassMethods.class_eval do
     alias_method :"prepend_#{filter}_action", :"prepend_#{filter}_filter"
     alias_method :"skip_#{filter}_action",    :"skip_#{filter}_filter"
   end
+  alias_method :skip_action_callback,    :skip_filter
 end
