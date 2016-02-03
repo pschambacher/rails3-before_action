@@ -1,4 +1,6 @@
 require "rails3/before_action/version"
+require 'active_support/concern'
+require 'active_support/callbacks'
 require 'abstract_controller/callbacks'
 
 AbstractController::Callbacks::ClassMethods.class_eval do
